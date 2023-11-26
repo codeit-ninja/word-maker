@@ -1,0 +1,38 @@
+h1 {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 600;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 5vw, 2.3rem);
+    font-weight: 600;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: .5rem;
+    margin-bottom: .75rem;
+    color: tint( $dark-color, 30% );
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 1rem;
+
+    &.error {
+        color: orange;
+    }
+}
+
+i {
+    font-style: italic;
+}
+
+small {
+    font-size: .8rem;
+}

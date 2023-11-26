@@ -1,0 +1,81 @@
+.text {
+    &-center {
+        text-align: center !important;
+    }
+
+    &-start {
+        text-align: left !important;
+    }
+
+    &-end {
+        text-align: right !important;
+    }
+}
+
+.bg {
+    &-primary {
+        background-color: var(--dark-color) !important;
+    }
+}
+
+@for $i from 1 to 6 {
+    .p-#{$i} {
+        padding: #{.75 * $i}rem;
+    }
+
+    .pt-#{$i} {
+        padding-top: #{.75 * $i}rem;
+    }
+
+    .pr-#{$i} {
+        padding-right: #{.75 * $i}rem;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: #{.75 * $i}rem;
+    }
+
+    .pl-#{$i} {
+        padding-left: #{.75 * $i}rem;
+    }
+
+    .py-#{$i} {
+        padding-top: #{.75 * $i}rem;
+        padding-bottom: #{.75 * $i}rem;
+    }
+
+    .px-#{$i} {
+        padding-left: #{.75 * $i}rem;
+        padding-right: #{.75 * $i}rem;
+    }
+
+    .m-#{$i} {
+        margin: #{.75 * $i}rem;
+    }
+
+    .mt-#{$i} {
+        margin-top: #{.75 * $i}rem;
+    }
+
+    .mr-#{$i} {
+        margin-right: #{.75 * $i}rem;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: #{.75 * $i}rem;
+    }
+
+    .ml-#{$i} {
+        margin-left: #{.75 * $i}rem;
+    }
+
+    .my-#{$i} {
+        margin-top: #{.75 * $i}rem;
+        margin-bottom: #{.75 * $i}rem;
+    }
+
+    .mx-#{$i} {
+        margin-left: #{.75 * $i}rem;
+        margin-right: #{.75 * $i}rem;
+    }
+}

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('/fonts/AlbertSans.woff2') format('woff2-variations');
+    src: url('/fonts/AlbertSans.woff2') format('woff2') tech('variations');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('/fonts/AlbertSans-Italic.woff2') format('woff2-variations');
+    src: url('/fonts/AlbertSans-Italic.woff2') format('woff2') tech('variations');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-style: italic;
+}

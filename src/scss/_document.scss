@@ -1,0 +1,21 @@
+body {
+    background-image: url(/pattern.svg);
+    background-size: 25vw;
+    background-blend-mode: color-dodge;
+    background-color: var(--body-bg);
+    font-family: "Albert Sans";
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    width: 100dvw;
+    color: var(--body-color);
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    animation: 800s bg-image-ltr linear;
+}

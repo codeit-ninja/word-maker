@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('/fonts/AlbertSans.woff2') format('woff2-variations');
+    src: url('/fonts/AlbertSans.woff2') format('woff2') tech('variations');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('/fonts/AlbertSans-Italic.woff2') format('woff2-variations');
+    src: url('/fonts/AlbertSans-Italic.woff2') format('woff2') tech('variations');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-style: italic;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    background-image: url(/pattern.svg);
+    background-size: 25vw;
+    background-blend-mode: color-dodge;
+    background-color: #323949;
+    font-family: "Albert Sans";
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    width: 100dvw;
+    color: #e0e4ef;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    animation: 800s bg-image-ltr linear;
+}
+
+form {
+    background-color: #4c5265;
+    padding: 3rem;
+    border-radius: .5rem;
+    text-align: center;
+    max-width: 450px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.form-group {
+    display: flex;
+    margin-top: 2rem;
+}
+
+h1 {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+input,
+button {
+    font-size: inherit;
+}
+
+input {
+    background-color: transparent;
+    border: 2px solid #A6ABBD;
+    border-right: 0;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    flex-grow: 1;
+    padding: 1rem 1.7rem;
+    outline: none;
+    color: inherit;
+}
+
+input:focus,
+input:focus + button {
+    box-shadow: 0 0 0 5px #5F5E77;
+}
+
+button {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #766B88;
+    color: #fff;
+    border: 2px solid #A6ABBD;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: .5rem 1.5rem;
+}
+
+button svg {
+    fill: white;
+}
+
+.form-input small {
+    display: block;
+    margin-top: 1rem;
+    font-size: .8rem;
+    color: #A6ABBD;
+}
+
+@keyframes bg-image-ltr {
+    to {
+        background-position-x: 10000px;
+        background-position-y: 10000px;
+    }
+}
